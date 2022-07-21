@@ -1,4 +1,5 @@
 import React from "react"
+import AddExpenseForm from "./AddExpenseForm";
 import Budget from "./Budget";
 import Expense from "./Expense";
 import ExpenseOn from "./ExpenseOn";
@@ -22,10 +23,15 @@ function App(){
           <Expense />
         </div>
      </div>
-     <h2>Expenses</h2>
+     
 
     <div className="row2">
+    <h1>Expenses</h1>
        <ExpenseOn />
+    </div>
+    <h1>Add Expense</h1>
+    <div>
+      <AddExpenseForm />
     </div>
   </div>
   )
