@@ -1,4 +1,5 @@
 import React from 'react'
+import ExpenseItem from './ExpenseItem'
 
 const ExpenseOn = () => {
   const expenseList=[
@@ -12,7 +13,16 @@ const ExpenseOn = () => {
   ]
   return (
     <div>
-      
+      <ul>
+        {expenseList.map((expenses) => (
+          <ExpenseItem 
+          id={expenses.id} 
+          name={expenses.name} 
+          cost={expenses.cost}
+
+          />
+        ))}
+      </ul>
     </div>
   )
 }

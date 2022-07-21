@@ -1,6 +1,7 @@
 import React from "react"
 import Budget from "./Budget";
 import Expense from "./Expense";
+import ExpenseOn from "./ExpenseOn";
 
 
 import Remaining from "./Remaining";
@@ -22,7 +23,11 @@ function App(){
         </div>
      </div>
      <h2>Expenses</h2>
-   </div>
+
+    <div className="row2">
+       <ExpenseOn />
+    </div>
+  </div>
   )
 }
 
